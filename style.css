@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 140%;
+    letter-spacing: -2%;
+    background-color: #ffffff;
+    display: flex;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.left-side{
+    width: 46vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0F70DA, #007AFF);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side-title h2{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    width: 404.8px;
+    text-align: center;
+    line-height: 150%;
+}
+
+.left-side-image{
+    margin-top: 57px;
+    margin-bottom: 10px;
+
+}
+
+.control{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+}
+
+.left-side-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.right-side{
+    width: 54vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-side-container{
+    
+    
+}
+
+.right-side-title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.right-side-title p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+
+.right-side-title h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1D1D1D;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+
+.input-field{
+    display: flex;
+    gap: 32px;
+}
+
+.input-first-name, .input-last-name, .input-emal, .input-birth, .input-password, .input-confirm-password{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+   
+}
+
+.I-field{
+    width: 358px;
+    height: 48px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    background-image: transparent;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    color: #2D3748;
+
+}
+
+.I-field:focus{
+    outline: none;
+    border: 1px solid #007AFF;
+
+}
+
+.forgotPassword a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #007AFF;
+}
+
+.createAccount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 358px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #007AFF;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.createAccount:hover{
+    background-color: #0056B3;
+}
+
+.Google-connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 358px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #2D3748;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.confrimButtons{
+    display: flex;
+    gap: 32px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.login p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+
+.login p a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #007AFF;
+}
+
+.downloadButtons{
+    display: flex;
+    gap: 12px;
+}
+
+.field-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#input-rememberMe{
+    display: flex;
+    justify-content: space-between  ;
+
+}
+
+.rememberAgree{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.remember, .agree{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login{
+    margin-bottom: 15px;
+}
+
+.login p{
+    text-align: center;
+}
+
+.error-email,  .error-password, .unMatch-password{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #EB0400;
+    display: none;
+}
+
+.error-email span, .error-password span, .unMatch-password span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+
+input[type="date"]::-moz-calendar-picker-indicator {
+  display: none;
+  -moz-appearance: none;
+}
+
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  font-family: 'Poppins', sans-serif; /* Remplacez "Arial" par la police de votre choix */
+  font-weight: 600;
+}
+
+.error .error-email{
+    display: flex;
+}
+
+.error .error-password{
+    display: flex;
+}
+
+.error .unMatch-password{
+    display: flex;
+}
+
+/* Responsive */
+
+@media screen and (max-width : 1500px){
+    .Google-connect{
+        width: 270px;
+    }
+
+    .createAccount{
+        width: 270px;
+    }
+
+    .I-field{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width : 1200px){
+    .left-side{
+        display: none;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-side{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width : 640px){
+    .input-field{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .confrimButtons{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .Google-connect,  .createAccount, .I-field{
+        width: 343px;
+    }
+
+    .right-side{
+        max-width: 343px;
+        width: 100%;
+    }
+}
+
+
+
